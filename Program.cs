@@ -1,8 +1,32 @@
 ﻿using ExemploPOO.Models;
+useing ExemploPOO.Interfaces;
 
-Computador c = new Computador(); //isso significa intanciar a classe computaodr
-c.ToString();
-Console.WriteLine(c.ToString());
+//ICalculadora calc = new ICalculadora(); Errado: Interfaces não podem ser instanciadas
+ICalculadora calc = new Calculadora(); // mas pode chmar a interface ICalculador para receber Calculadora, porque Calculadora impllementa interface
+Console.WriteLine(calc.Multiplicar(3,9));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Computador c = new Computador(); //isso significa intanciar a classe computaodr
+// c.ToString();
+// Console.WriteLine(c.ToString());
 
 
 
